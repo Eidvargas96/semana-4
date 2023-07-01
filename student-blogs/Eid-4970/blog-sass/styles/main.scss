@@ -1,0 +1,28 @@
+@charset 'utf-8';
+@use "desktop/desktop";
+@use "base/base";
+$Gull-Gray:#94a3b8;
+$Catskill-White:#e2e8f0;
+$Candlelight: #facc15;
+$Catskill-White:#e2e8f0;
+@media screen and (min-width: 800px) {
+    body{
+        background-color: $Gull-Gray;
+    }
+    input[type="search"] {
+        color: $Catskill-White;
+    }
+}
+@media screen and (max-width: 800px) {
+    body{
+        background-color: $Candlelight;
+    }
+    input[type="search"] {
+        color: $Catskill-White;
+    }
+   
+}
+
+
+
+

@@ -1,0 +1,64 @@
+@media screen and (min-width: 768px) {
+
+    .Contenido {
+        display: grid;
+        grid-template-columns: [line1]auto[line2]auto[line3];
+        grid-template-rows: [row1]auto[row2]auto[row3];
+        grid-column: line1 / line2;
+        grid-row: row1 / row2;
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        border-radius: 10px;        
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        color: #94a3b8;
+        gap: 50%;
+        align-items: center;
+    }
+
+    .FullStak {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        grid-column: line1 / line2;
+        grid-row: row1 / row2;
+    }
+
+    .Trabajo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        grid-column: line2 / line3;
+        grid-row: row1 / row2;
+    }
+
+    .Astronomia {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        grid-column: line1 / line2;
+        grid-row: row2 / row3;
+    }
+
+    .Ciclismo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        grid-column: line2 / line3;
+        grid-row: row2 / row3;
+    }
+}

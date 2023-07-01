@@ -1,0 +1,197 @@
+@media screen and (min-width: 768px) {
+  .Contenido {
+    display: grid;
+    grid-template-columns: [line1] auto [line2] auto [line3];
+    grid-template-rows: [row1] auto [row2] auto [row3];
+    grid-column: line1/line2;
+    grid-row: row1/row2;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    color: #94a3b8;
+    gap: 50%;
+    align-items: center;
+  }
+  .FullStak {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-column: line1/line2;
+    grid-row: row1/row2;
+  }
+  .Trabajo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-column: line2/line3;
+    grid-row: row1/row2;
+  }
+  .Astronomia {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-column: line1/line2;
+    grid-row: row2/row3;
+  }
+  .Ciclismo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-column: line2/line3;
+    grid-row: row2/row3;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Contenido {
+    display: flex;
+    flex-direction: column;
+    grid-column: line1/line2;
+    grid-row: row1/row2;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    color: #94a3b8;
+    gap: 50%;
+    align-items: center;
+  }
+  .FullStak {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .Trabajo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .Astronomia {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .Ciclismo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #CBD5E1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 0px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: [line1] auto [line2] 20% [line3];
+  grid-template-rows: [row1] auto [row2];
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  background: #2A3441;
+}
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  grid-column: line2/line3;
+  grid-row: row1/row2;
+  width: 100%;
+  justify-self: auto;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+p {
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.whatsapp {
+  display: flex;
+  position: fixed;
+  top: 50px;
+  left: 10px;
+  object-fit: cover;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+footer {
+  background: #2A3441;
+  border-radius: 10px;
+  text-align: center;
+  color: #94a3b8;
+  width: 100%;
+  height: 100%;
+}
+
+input[type=search] {
+  width: 90%;
+  height: 30px;
+  padding: 5px;
+  border-radius: 7px;
+  background: #94a3b8;
+}
+
+::placeholder {
+  color: #e2e8f0;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: #94a3b8;
+  width: 100%;
+  height: auto;
+  justify-content: start;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,102 @@
+@charset 'utf-8';
+html {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: $Geyser;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+@use "desktop/desktop";
+@use "base/base";
+$Gull-Gray: #94a3b8;
+$Catskill-White: #e2e8f0;
+$Ebony-Clay:#2A3441;
+$Geyser:#CBD5E1;
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: [line1]auto[line2]20%[line3];
+    grid-template-rows: [row1]auto[row2];
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    background:$Ebony-Clay;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    grid-column: line2 / line3;
+    grid-row: row1 / row2;
+    width: 100%;
+    justify-self: auto;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+p {
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.whatsapp {
+    display: flex;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+footer {
+    background: $Ebony-Clay;
+    border-radius: 10px;
+    text-align: center;
+    color: $Gull-Gray;
+    width: 100%;
+    height: 100%;
+}
+
+input[type=search] {
+    width: 90%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 7px;
+    background: $Gull-Gray;
+}
+
+::placeholder {
+    color: $Catskill-White;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: $Gull-Gray;
+    width: 100%;
+    height: auto;
+    justify-content: start;
+}
